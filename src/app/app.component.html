@@ -1,0 +1,15 @@
+<h1>Payment Form</h1>
+
+<div>
+  <label>Payee Name</label>
+  <input (input)="onNameChange($event)" />
+</div>
+
+<div>
+  <label>Payee Date</label>
+  <input (input)="onDateChange($event)" />
+</div>
+
+{{ name | titlecase}}
+
+{{ date | date }}
